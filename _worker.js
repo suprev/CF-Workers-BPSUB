@@ -249,7 +249,7 @@ async function getSubData() {
             return null;
         }
     }
-    const response = await fetch('https://cfxr.eu.org/getSub');
+    const response = await fetch('https://cfxr.eu.org/getSub?host=fd.xouox.de');
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
